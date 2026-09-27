@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* background-color: #ffffff; */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(243, 203, 158, 0.409);
+}
+
+.container {
+    max-width: 450px;
+    width: 100%;
+    display: flex;
+    margin: 30px 40px;
+    padding: 30px;
+    flex-direction: column;
+    gap: 20px;
+}
+.top-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    position: relative;
+    border-radius: 20px;
+    background-color: #ffa587;
+    padding: 12px 12px;
+}
+.top-card h3 {
+    padding-bottom: 12px;
+    color: #ffffff8a;
+    font-weight: 400;
+}
+.top-card .balance-title {
+    padding-bottom: 4px;
+    color: #ffffffde;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.top-card .balance-amount {
+    font-size: 22px;
+    font-weight: 900;
+    color: aliceblue;
+}
+.top-card .circle-light {
+    width: 36px;
+    height: 36px;
+    /* background-color: black; */
+    border: 2px white solid;
+    border-radius: 50%;
+    position: absolute;
+    right: 33px;
+
+    /* top: 29px; */
+}
+
+.top-card .circle-dark {
+    width: 36px;
+    height: 36px;
+    background-color: black;
+    border-radius: 50%;
+    /* position: absolute; */
+}
+/* .change-description,.total-title, .days,.balance-title{
+    color: #ffffff8a;
+    font-weight: 400;
+} */
+/*      ---------------------------- */
+.spending-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 20px 20px;
+    border-radius: 21px;
+}
+.spending-title {
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding-bottom: 14px;
+}
+.spending-card .days {
+    display: flex;
+    height: 200px;
+    justify-content: space-evenly;
+    align-items: end;
+    /* padding-bottom: 20px; */
+    gap: 10px;
+    text-align: center;
+    border-bottom: 2px #eee solid;
+    padding-bottom: 11px;
+}
+.bar1,
+.bar2,
+.bar3,
+.bar4,
+.bar5,
+.bar6,
+.bar7 {
+    width: 39px;
+    border-radius: 7px;
+    background-color: #df430fc4;
+}
+.spending-card .days .mon .bar1 {
+    /* width: 32px; */
+    height: 43px;
+    /* border-radius: 4px;
+    background-color: #df430f; */
+}
+.spending-card .days .tue .bar2 {
+    height: 90px;
+}
+
+.spending-card .days .wed .bar3 {
+    background-color: #00ffffab;
+    height: 128px;
+}
+.spending-card .days .thu .bar4 {
+    height: 75px;
+}
+.spending-card .days .fri .bar5 {
+    height: 54px;
+}
+.spending-card .days .sat .bar6 {
+    height: 95px;
+}
+.spending-card .days .sun .bar7 {
+    height: 65px;
+}
+/*----------------------- total card --------------*/
+.total-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    line-height: 1;
+    position: relative;
+}
+.total-title,
+.change-description {
+    font-size: smaller;
+    font-weight: lighter;
+    color: #9faebd;
+}
+.total-amount {
+    font-size: 30px;
+    font-weight: 800;
+}
+.total-change {
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+}
+.change-percentage {
+    position: absolute;
+    font-size: 15px;
+    top: -24px;
+    right: 1px;
+    font-weight: 800;
+}
